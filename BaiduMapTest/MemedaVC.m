@@ -8,7 +8,7 @@
 
 #import "MemedaVC.h"
 #import "TwoViewController.h"
-
+#import "TestTableviewVC.h"
 
 @interface MemedaVC ()
 
@@ -30,6 +30,11 @@
     
     TwoViewController *vc = [TwoViewController new];
     
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)clickTestTableviewBtn:(id)sender {
+    TestTableviewVC *vc = [TestTableviewVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

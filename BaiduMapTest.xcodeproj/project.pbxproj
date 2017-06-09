@@ -18,6 +18,10 @@
 		47A357A91ECCB0850061A379 /* MyENavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A357A81ECCB0850061A379 /* MyENavigationController.m */; };
 		47A357AD1ECCB1EE0061A379 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A357AB1ECCB1EE0061A379 /* TwoViewController.m */; };
 		47A357AE1ECCB1EE0061A379 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47A357AC1ECCB1EE0061A379 /* TwoViewController.xib */; };
+		9DB98D651EEAA6E5000E77BA /* TestTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB98D631EEAA6E4000E77BA /* TestTableviewVC.m */; };
+		9DB98D661EEAA6E5000E77BA /* TestTableviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB98D641EEAA6E4000E77BA /* TestTableviewVC.xib */; };
+		9DB98D6A1EEAA88B000E77BA /* XYOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB98D681EEAA88B000E77BA /* XYOrderCell.m */; };
+		9DB98D6B1EEAA88B000E77BA /* XYOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB98D691EEAA88B000E77BA /* XYOrderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,12 @@
 		47A357AA1ECCB1EE0061A379 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		47A357AB1ECCB1EE0061A379 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		47A357AC1ECCB1EE0061A379 /* TwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
+		9DB98D621EEAA6E4000E77BA /* TestTableviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableviewVC.h; sourceTree = "<group>"; };
+		9DB98D631EEAA6E4000E77BA /* TestTableviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableviewVC.m; sourceTree = "<group>"; };
+		9DB98D641EEAA6E4000E77BA /* TestTableviewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableviewVC.xib; sourceTree = "<group>"; };
+		9DB98D671EEAA88B000E77BA /* XYOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrderCell.h; sourceTree = "<group>"; };
+		9DB98D681EEAA88B000E77BA /* XYOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrderCell.m; sourceTree = "<group>"; };
+		9DB98D691EEAA88B000E77BA /* XYOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +81,14 @@
 		47A3578A1ECCABB60061A379 /* BaiduMapTest */ = {
 			isa = PBXGroup;
 			children = (
+				9DB98D671EEAA88B000E77BA /* XYOrderCell.h */,
+				9DB98D681EEAA88B000E77BA /* XYOrderCell.m */,
+				9DB98D691EEAA88B000E77BA /* XYOrderCell.xib */,
 				47A357A71ECCB0850061A379 /* MyENavigationController.h */,
 				47A357A81ECCB0850061A379 /* MyENavigationController.m */,
+				9DB98D621EEAA6E4000E77BA /* TestTableviewVC.h */,
+				9DB98D631EEAA6E4000E77BA /* TestTableviewVC.m */,
+				9DB98D641EEAA6E4000E77BA /* TestTableviewVC.xib */,
 				47A357A21ECCAF9D0061A379 /* MemedaVC.h */,
 				47A357A31ECCAF9D0061A379 /* MemedaVC.m */,
 				47A357A41ECCAF9D0061A379 /* MemedaVC.xib */,
@@ -163,7 +179,9 @@
 				47A357981ECCABB60061A379 /* Assets.xcassets in Resources */,
 				47A357961ECCABB60061A379 /* Main.storyboard in Resources */,
 				47A357AE1ECCB1EE0061A379 /* TwoViewController.xib in Resources */,
+				9DB98D661EEAA6E5000E77BA /* TestTableviewVC.xib in Resources */,
 				47A357A61ECCAF9D0061A379 /* MemedaVC.xib in Resources */,
+				9DB98D6B1EEAA88B000E77BA /* XYOrderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +197,9 @@
 				47A357A91ECCB0850061A379 /* MyENavigationController.m in Sources */,
 				47A357AD1ECCB1EE0061A379 /* TwoViewController.m in Sources */,
 				47A3578D1ECCABB60061A379 /* main.m in Sources */,
+				9DB98D6A1EEAA88B000E77BA /* XYOrderCell.m in Sources */,
 				47A357A51ECCAF9D0061A379 /* MemedaVC.m in Sources */,
+				9DB98D651EEAA6E5000E77BA /* TestTableviewVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +356,7 @@
 				47A357A11ECCABB60061A379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
