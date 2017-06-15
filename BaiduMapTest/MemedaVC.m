@@ -12,6 +12,8 @@
 
 @interface MemedaVC ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *testImage;
+
 @end
 
 @implementation MemedaVC
@@ -20,6 +22,7 @@
     [super viewDidLoad];
 
    self.title = @"你好";
+    _testImage.image = [UIImage imageNamed:@"qbuyUp.png"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,8 +31,12 @@
 }
 - (IBAction)clickBtn:(id)sender {
     
-    TwoViewController *vc = [TwoViewController new];
-    
+    TwoViewController *vc = [TwoViewController new ];
+    vc.littleBlock = ^(NSString *test) {
+       
+        NSLog(@"----%@",test);
+    };
+
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -38,14 +45,5 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

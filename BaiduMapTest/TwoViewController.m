@@ -7,31 +7,44 @@
 //
 
 #import "TwoViewController.h"
+#import "ThreeViewController.h"
+
 
 @interface TwoViewController ()
+
 
 @end
 
 @implementation TwoViewController
 
+- (instancetype)initCompletion:(void(^)(NSString *))testBlock{
+    
+    self = [super init];
+    if (self) {
+        
+        _littleBlock = testBlock;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clickTestButton:(id)sender {
+    
+    
+    ThreeViewController *vc = [ThreeViewController new];
+    vc.littleBlock = ^(NSString *test) {
+      
+            if(_littleBlock != nil) {
+        
+                _littleBlock(test);
+            }
+    };
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

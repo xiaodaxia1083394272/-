@@ -22,6 +22,8 @@
 		9DB98D661EEAA6E5000E77BA /* TestTableviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB98D641EEAA6E4000E77BA /* TestTableviewVC.xib */; };
 		9DB98D6A1EEAA88B000E77BA /* XYOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB98D681EEAA88B000E77BA /* XYOrderCell.m */; };
 		9DB98D6B1EEAA88B000E77BA /* XYOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB98D691EEAA88B000E77BA /* XYOrderCell.xib */; };
+		9DD153281EF2826C0075B5ED /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD153261EF2826C0075B5ED /* ThreeViewController.m */; };
+		9DD153291EF2826C0075B5ED /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD153271EF2826C0075B5ED /* ThreeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,9 @@
 		9DB98D671EEAA88B000E77BA /* XYOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYOrderCell.h; sourceTree = "<group>"; };
 		9DB98D681EEAA88B000E77BA /* XYOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYOrderCell.m; sourceTree = "<group>"; };
 		9DB98D691EEAA88B000E77BA /* XYOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYOrderCell.xib; sourceTree = "<group>"; };
+		9DD153251EF2826C0075B5ED /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		9DD153261EF2826C0075B5ED /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		9DD153271EF2826C0075B5ED /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,9 @@
 				47A357AA1ECCB1EE0061A379 /* TwoViewController.h */,
 				47A357AB1ECCB1EE0061A379 /* TwoViewController.m */,
 				47A357AC1ECCB1EE0061A379 /* TwoViewController.xib */,
+				9DD153251EF2826C0075B5ED /* ThreeViewController.h */,
+				9DD153261EF2826C0075B5ED /* ThreeViewController.m */,
+				9DD153271EF2826C0075B5ED /* ThreeViewController.xib */,
 				47A3578E1ECCABB60061A379 /* AppDelegate.h */,
 				47A3578F1ECCABB60061A379 /* AppDelegate.m */,
 				47A357911ECCABB60061A379 /* ViewController.h */,
@@ -182,6 +190,7 @@
 				9DB98D661EEAA6E5000E77BA /* TestTableviewVC.xib in Resources */,
 				47A357A61ECCAF9D0061A379 /* MemedaVC.xib in Resources */,
 				9DB98D6B1EEAA88B000E77BA /* XYOrderCell.xib in Resources */,
+				9DD153291EF2826C0075B5ED /* ThreeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +207,7 @@
 				47A357AD1ECCB1EE0061A379 /* TwoViewController.m in Sources */,
 				47A3578D1ECCABB60061A379 /* main.m in Sources */,
 				9DB98D6A1EEAA88B000E77BA /* XYOrderCell.m in Sources */,
+				9DD153281EF2826C0075B5ED /* ThreeViewController.m in Sources */,
 				47A357A51ECCAF9D0061A379 /* MemedaVC.m in Sources */,
 				9DB98D651EEAA6E5000E77BA /* TestTableviewVC.m in Sources */,
 			);

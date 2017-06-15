@@ -1,8 +1,8 @@
 //
-//  TwoViewController.h
+//  ThreeViewController.h
 //  BaiduMapTest
 //
-//  Created by HMRL on 17/5/18.
+//  Created by 123 on 2017/6/15.
 //  Copyright © 2017年 HMRL. All rights reserved.
 //
 
@@ -10,11 +10,7 @@
 
 typedef void(^testBlock)(NSString*test);
 
-@interface TwoViewController : UIViewController
-
+@interface ThreeViewController : UIViewController
 @property (nonatomic, copy)  testBlock littleBlock;
-
-- (instancetype)initCompletion:(void(^)(NSString *test))testBlock;
-
 
 @end
