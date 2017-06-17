@@ -8,10 +8,12 @@
 
 #import "TestTableviewVC.h"
 #import "XYOrderCell.h"
+#import "XYShopActivityHeaderView.h"
 
-@interface TestTableviewVC ()<UITableViewDataSource,UITableViewDelegate>
+
+@interface TestTableviewVC ()<UITableViewDataSource,UITableViewDelegate,XYShopActivityHeaderViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *dataTableview;
-
+@property (strong, nonatomic) XYShopActivityHeaderView *testview;
 @end
 
 @implementation TestTableviewVC
@@ -20,6 +22,21 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    [self update];
+}
+
+- (void)update{
+    
+    _testview = [XYShopActivityHeaderView createViewWithDelegate:self];
+//    view.frame = CGRectMake(0, 0, self.view.bounds.size.width, 177);
+    _dataTableview.tableHeaderView = _testview;
+}
+- (void)testHeight:(XYShopActivityHeaderView *)view{
+    _dataTableview.frame = view.frame;
+    _dataTableview.tableHeaderView = view;
+}
 
 #pragma mark -------------tableviewDelegate----------------
 
