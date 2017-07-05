@@ -37,7 +37,7 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qbuyUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="mm3-p3-mKs">
-                    <rect key="frame" x="8" y="190" width="144" height="128"/>
+                    <rect key="frame" x="23" y="190" width="81" height="68"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>

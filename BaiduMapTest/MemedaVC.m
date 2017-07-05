@@ -25,10 +25,6 @@
     _testImage.image = [UIImage imageNamed:@"qbuyUp.png"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (IBAction)clickBtn:(id)sender {
     
     TwoViewController *vc = [TwoViewController new ];
@@ -38,6 +34,7 @@
     };
 
     [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 - (IBAction)clickTestTableviewBtn:(id)sender {
