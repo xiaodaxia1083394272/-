@@ -42,5 +42,9 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)clickCollectionViewTest:(id)sender {
+    
+}
+
 
 @end

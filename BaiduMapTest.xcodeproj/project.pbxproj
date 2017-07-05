@@ -45,6 +45,9 @@
 		9DBCEC7A1F0CE3B900D60FD0 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DBCEC661F0CE3B900D60FD0 /* 7.jpg */; };
 		9DBCEC7B1F0CE3B900D60FD0 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DBCEC671F0CE3B900D60FD0 /* 8.jpg */; };
 		9DBCEC7C1F0CE3B900D60FD0 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DBCEC681F0CE3B900D60FD0 /* 9.jpg */; };
+		9DBCEC851F0CE62200D60FD0 /* CollectionViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBCEC831F0CE62200D60FD0 /* CollectionViewTestVC.m */; };
+		9DBCEC861F0CE62200D60FD0 /* CollectionViewTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBCEC841F0CE62200D60FD0 /* CollectionViewTestVC.xib */; };
+		9DBCEC891F0CEE5100D60FD0 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBCEC881F0CEE5100D60FD0 /* CollectionCell.m */; };
 		9DCD76071EF4D0EA00422E8D /* XYShopActivityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD76051EF4D0EA00422E8D /* XYShopActivityHeaderView.m */; };
 		9DCD76081EF4D0EA00422E8D /* XYShopActivityHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCD76061EF4D0EA00422E8D /* XYShopActivityHeaderView.xib */; };
 		9DD153281EF2826C0075B5ED /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD153261EF2826C0075B5ED /* ThreeViewController.m */; };
@@ -101,6 +104,11 @@
 		9DBCEC661F0CE3B900D60FD0 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		9DBCEC671F0CE3B900D60FD0 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		9DBCEC681F0CE3B900D60FD0 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		9DBCEC821F0CE62200D60FD0 /* CollectionViewTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewTestVC.h; sourceTree = "<group>"; };
+		9DBCEC831F0CE62200D60FD0 /* CollectionViewTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTestVC.m; sourceTree = "<group>"; };
+		9DBCEC841F0CE62200D60FD0 /* CollectionViewTestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewTestVC.xib; sourceTree = "<group>"; };
+		9DBCEC871F0CEE5100D60FD0 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		9DBCEC881F0CEE5100D60FD0 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 		9DCD76041EF4D0EA00422E8D /* XYShopActivityHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYShopActivityHeaderView.h; sourceTree = "<group>"; };
 		9DCD76051EF4D0EA00422E8D /* XYShopActivityHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYShopActivityHeaderView.m; sourceTree = "<group>"; };
 		9DCD76061EF4D0EA00422E8D /* XYShopActivityHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYShopActivityHeaderView.xib; sourceTree = "<group>"; };
@@ -156,6 +164,11 @@
 				47A357A21ECCAF9D0061A379 /* MemedaVC.h */,
 				47A357A31ECCAF9D0061A379 /* MemedaVC.m */,
 				47A357A41ECCAF9D0061A379 /* MemedaVC.xib */,
+				9DBCEC821F0CE62200D60FD0 /* CollectionViewTestVC.h */,
+				9DBCEC831F0CE62200D60FD0 /* CollectionViewTestVC.m */,
+				9DBCEC841F0CE62200D60FD0 /* CollectionViewTestVC.xib */,
+				9DBCEC871F0CEE5100D60FD0 /* CollectionCell.h */,
+				9DBCEC881F0CEE5100D60FD0 /* CollectionCell.m */,
 				47A357AA1ECCB1EE0061A379 /* TwoViewController.h */,
 				47A357AB1ECCB1EE0061A379 /* TwoViewController.m */,
 				47A357AC1ECCB1EE0061A379 /* TwoViewController.xib */,
@@ -288,6 +301,7 @@
 				9DBCEC711F0CE3B900D60FD0 /* 17.jpg in Resources */,
 				47A357AE1ECCB1EE0061A379 /* TwoViewController.xib in Resources */,
 				9DB98D661EEAA6E5000E77BA /* TestTableviewVC.xib in Resources */,
+				9DBCEC861F0CE62200D60FD0 /* CollectionViewTestVC.xib in Resources */,
 				9DBCEC721F0CE3B900D60FD0 /* 18.jpg in Resources */,
 				9DBCEC771F0CE3B900D60FD0 /* 4.jpg in Resources */,
 				9DBCEC7B1F0CE3B900D60FD0 /* 8.jpg in Resources */,
@@ -322,6 +336,8 @@
 				9DB98D6A1EEAA88B000E77BA /* XYOrderCell.m in Sources */,
 				9DD153281EF2826C0075B5ED /* ThreeViewController.m in Sources */,
 				47A357A51ECCAF9D0061A379 /* MemedaVC.m in Sources */,
+				9DBCEC851F0CE62200D60FD0 /* CollectionViewTestVC.m in Sources */,
+				9DBCEC891F0CEE5100D60FD0 /* CollectionCell.m in Sources */,
 				9DBCEC4E1F0C8F7300D60FD0 /* CZRDropDownMenuCell.m in Sources */,
 				9DB98D651EEAA6E5000E77BA /* TestTableviewVC.m in Sources */,
 			);
