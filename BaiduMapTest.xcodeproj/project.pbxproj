@@ -52,6 +52,7 @@
 		9DCD76081EF4D0EA00422E8D /* XYShopActivityHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCD76061EF4D0EA00422E8D /* XYShopActivityHeaderView.xib */; };
 		9DD153281EF2826C0075B5ED /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD153261EF2826C0075B5ED /* ThreeViewController.m */; };
 		9DD153291EF2826C0075B5ED /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD153271EF2826C0075B5ED /* ThreeViewController.xib */; };
+		9DDE891D1F0DC9B60012AA41 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE891C1F0DC9B60012AA41 /* LineLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,8 @@
 		9DD153251EF2826C0075B5ED /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		9DD153261EF2826C0075B5ED /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		9DD153271EF2826C0075B5ED /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
+		9DDE891B1F0DC9B60012AA41 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		9DDE891C1F0DC9B60012AA41 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				9DBCEC841F0CE62200D60FD0 /* CollectionViewTestVC.xib */,
 				9DBCEC871F0CEE5100D60FD0 /* CollectionCell.h */,
 				9DBCEC881F0CEE5100D60FD0 /* CollectionCell.m */,
+				9DDE891B1F0DC9B60012AA41 /* LineLayout.h */,
+				9DDE891C1F0DC9B60012AA41 /* LineLayout.m */,
 				47A357AA1ECCB1EE0061A379 /* TwoViewController.h */,
 				47A357AB1ECCB1EE0061A379 /* TwoViewController.m */,
 				47A357AC1ECCB1EE0061A379 /* TwoViewController.xib */,
@@ -329,6 +334,7 @@
 				47A357931ECCABB60061A379 /* ViewController.m in Sources */,
 				47A357901ECCABB60061A379 /* AppDelegate.m in Sources */,
 				9DBCEC521F0C956E00D60FD0 /* ImageCellCollectionViewCell.m in Sources */,
+				9DDE891D1F0DC9B60012AA41 /* LineLayout.m in Sources */,
 				47A357A91ECCB0850061A379 /* MyENavigationController.m in Sources */,
 				47A357AD1ECCB1EE0061A379 /* TwoViewController.m in Sources */,
 				47A3578D1ECCABB60061A379 /* main.m in Sources */,

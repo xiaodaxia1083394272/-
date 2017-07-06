@@ -8,7 +8,7 @@
 
 #import "CollectionViewTestVC.h"
 #import "CollectionCell.h"
-
+#import "LineLayout.h"
 
 @interface CollectionViewTestVC ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -45,13 +45,19 @@ static NSString *identifier = @"firstCell";
     __weak typeof(self)weakSelf = self;
     if (!_collectionView) {
         // 布局,直接实例一个出来就
-        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+//        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         
 //        _layout = layout;
-        
+
         // 创建collectionView
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0,weakSelf.view.frame.size.width , weakSelf.view.frame.size.height - 64) collectionViewLayout:layout];
-        _collectionView.backgroundColor = [UIColor whiteColor];
+//        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0,weakSelf.view.frame.size.width , weakSelf.view.frame.size.height - 64) collectionViewLayout:layout];
+        //替换新的布局
+        LineLayout *layout = [LineLayout new];
+        layout.itemSize = CGSizeMake(100, 100);
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 100,weakSelf.view.frame.size.width ,/* weakSelf.view.frame.size.height - 64*/120) collectionViewLayout:layout];
+
+        
+        _collectionView.backgroundColor = [UIColor blackColor];
         _collectionView.delegate = weakSelf;
         _collectionView.dataSource = weakSelf;
         //todo注册
