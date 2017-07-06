@@ -9,6 +9,8 @@
 #import "MemedaVC.h"
 #import "TwoViewController.h"
 #import "TestTableviewVC.h"
+#import "CollectionViewTestVC.h"
+
 
 @interface MemedaVC ()
 
@@ -43,6 +45,8 @@
 }
 
 - (IBAction)clickCollectionViewTest:(id)sender {
+    
+    [self.navigationController pushViewController:[CollectionViewTestVC new] animated:YES];
     
 }
 

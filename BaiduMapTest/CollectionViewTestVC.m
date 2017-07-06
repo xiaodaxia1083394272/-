@@ -36,6 +36,8 @@ static NSString *identifier = @"firstCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self.view addSubview:self.collectionView];
 }
 
 - (UICollectionView *)collectionView
@@ -74,10 +76,10 @@ static NSString *identifier = @"firstCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    YBFirstCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"firstCell" forIndexPath:indexPath];
-//    cell.imageName = self.imageNames[indexPath.item];
-//    return cell;
-    return nil;
+    CollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    NSString *a = self.imageNames[indexPath.item];
+    cell.titleLabel.image = [UIImage imageNamed:a];
+    return cell;
 }
 
 

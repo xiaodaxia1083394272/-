@@ -10,6 +10,6 @@
 
 @interface CollectionCell : UICollectionViewCell
 
-@property (nonatomic,weak) UILabel *titleLabel;
+@property (nonatomic,weak) UIImageView *titleLabel;
 
 @end
