@@ -25,11 +25,13 @@
         
         _littleBlock(@"memexiao");
     }
-    NSInteger popIndex = self.navigationController.viewControllers.count - 3;
+//    NSInteger popIndex = self.navigationController.viewControllers.count - 3;
+//    
+//    UIViewController *vc = self.navigationController.viewControllers[popIndex];
+//
+//    [self.navigationController popToViewController:vc animated:YES];
     
-    UIViewController *vc = self.navigationController.viewControllers[popIndex];
-
-    [self.navigationController popToViewController:vc animated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

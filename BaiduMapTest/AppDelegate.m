@@ -13,7 +13,7 @@
 
 
 
-@interface AppDelegate ()<UITabBarControllerDelegate>
+@interface AppDelegate ()<UITabBarControllerDelegate,UIAlertViewDelegate>
 
 @property (strong, nonatomic) MyENavigationController *firstNavigationController;
 
@@ -60,36 +60,62 @@
     
     }
     
+    [self performSelector:@selector(releaseNotification) withObject:nil/*可传任意类型参数*/ afterDelay:30];
+    
     
     return YES;
 }
 
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+- (void)releaseNotification{
+    
+    UILocalNotification *notification=[[UILocalNotification alloc] init];
+    notification.fireDate=[NSDate dateWithTimeIntervalSinceNow:10];
+    notification.alertBody=@"闹钟响了。";
+    notification.alertTitle=@"请打开闹钟";
+    notification.repeatInterval=NSCalendarUnitSecond;
+    　　 //设置本地通知的时区
+    notification.timeZone = [NSTimeZone defaultTimeZone];
+    notification.applicationIconBadgeNumber=1;
+    
+    notification.userInfo=@{@"name":@"zhangsanfeng"};
+    notification.soundName=UILocalNotificationDefaultSoundName;
+    
+    //[[UIApplication sharedApplication]scheduleLocalNotification:notification];
+    //[[UIApplication sharedApplication]presentLocalNotificationNow:notification];
 }
 
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void)cancelNotification{
+    
+    UIApplication *app=[UIApplication sharedApplication];
+    NSArray *array=[app scheduledLocalNotifications];
+    NSLog(@"%ld",array.count);
+    
+    for (UILocalNotification * local in array) {
+        NSDictionary *dic= local.userInfo;
+        if ([dic[@"name"] isEqual:@"zhangsanfeng"]) {
+            //删除指定的通知
+            [app cancelLocalNotification:local];
+        }
+    }
 }
 
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+/*
+ 需要注意的是，在情况a中，如果用户点击提醒进入应用程序，也会执行收到本地通知的回调方法，这种情况下如果你添加了上面那段代码，则会出现连续出现两次提示，为了解决这个问题，修改代码如下:(前提是你的应用程序不处于激活状态，本地通知才会有效果)
+ */
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    //如果你想实现程序在后台时候的那种提醒效果，可以在这个方法中添加相关代码（添加个警告视图）
+    
+    //判断应用程序当前的运行状态，如果是激活状态，则进行提醒，否则不提醒
+    if (application.applicationState == UIApplicationStateActive) {
+        //显示警告内容
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"memeda" message:@"memexiao" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"done", nil];
+        [alert show];
+    }
 }
 
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 
 @end

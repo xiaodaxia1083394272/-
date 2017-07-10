@@ -50,6 +50,18 @@
 		9DBCEC891F0CEE5100D60FD0 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBCEC881F0CEE5100D60FD0 /* CollectionCell.m */; };
 		9DCD76071EF4D0EA00422E8D /* XYShopActivityHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD76051EF4D0EA00422E8D /* XYShopActivityHeaderView.m */; };
 		9DCD76081EF4D0EA00422E8D /* XYShopActivityHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCD76061EF4D0EA00422E8D /* XYShopActivityHeaderView.xib */; };
+		9DCE5E5E1F134C9500D0890C /* XYFindOrReleaseJod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E491F134C9500D0890C /* XYFindOrReleaseJod.m */; };
+		9DCE5E5F1F134C9500D0890C /* XYClickCellDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E4C1F134C9500D0890C /* XYClickCellDataSource.m */; };
+		9DCE5E601F134C9500D0890C /* XYClickCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E4E1F134C9500D0890C /* XYClickCellModel.m */; };
+		9DCE5E611F134C9500D0890C /* XYJodClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E511F134C9500D0890C /* XYJodClickCell.m */; };
+		9DCE5E621F134C9500D0890C /* XYJodClickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE5E521F134C9500D0890C /* XYJodClickCell.xib */; };
+		9DCE5E631F134C9500D0890C /* XYJodFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E541F134C9500D0890C /* XYJodFooterView.m */; };
+		9DCE5E641F134C9500D0890C /* XYJodFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE5E551F134C9500D0890C /* XYJodFooterView.xib */; };
+		9DCE5E651F134C9500D0890C /* XYJodHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E571F134C9500D0890C /* XYJodHeaderView.m */; };
+		9DCE5E661F134C9500D0890C /* XYJodHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE5E581F134C9500D0890C /* XYJodHeaderView.xib */; };
+		9DCE5E671F134C9500D0890C /* XYWelfareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E5A1F134C9500D0890C /* XYWelfareCell.m */; };
+		9DCE5E681F134C9500D0890C /* XYWelfareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE5E5B1F134C9500D0890C /* XYWelfareCell.xib */; };
+		9DCE5E691F134C9500D0890C /* XYWelfareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE5E5D1F134C9500D0890C /* XYWelfareCollectionViewCell.m */; };
 		9DD153281EF2826C0075B5ED /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD153261EF2826C0075B5ED /* ThreeViewController.m */; };
 		9DD153291EF2826C0075B5ED /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD153271EF2826C0075B5ED /* ThreeViewController.xib */; };
 		9DDE891D1F0DC9B60012AA41 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE891C1F0DC9B60012AA41 /* LineLayout.m */; };
@@ -113,6 +125,27 @@
 		9DCD76041EF4D0EA00422E8D /* XYShopActivityHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYShopActivityHeaderView.h; sourceTree = "<group>"; };
 		9DCD76051EF4D0EA00422E8D /* XYShopActivityHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYShopActivityHeaderView.m; sourceTree = "<group>"; };
 		9DCD76061EF4D0EA00422E8D /* XYShopActivityHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYShopActivityHeaderView.xib; sourceTree = "<group>"; };
+		9DCE151D1F0F1FC300528E4B /* BaiduMapTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BaiduMapTest.entitlements; sourceTree = "<group>"; };
+		9DCE5E481F134C9500D0890C /* XYFindOrReleaseJod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYFindOrReleaseJod.h; sourceTree = "<group>"; };
+		9DCE5E491F134C9500D0890C /* XYFindOrReleaseJod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYFindOrReleaseJod.m; sourceTree = "<group>"; };
+		9DCE5E4B1F134C9500D0890C /* XYClickCellDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYClickCellDataSource.h; sourceTree = "<group>"; };
+		9DCE5E4C1F134C9500D0890C /* XYClickCellDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYClickCellDataSource.m; sourceTree = "<group>"; };
+		9DCE5E4D1F134C9500D0890C /* XYClickCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYClickCellModel.h; sourceTree = "<group>"; };
+		9DCE5E4E1F134C9500D0890C /* XYClickCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYClickCellModel.m; sourceTree = "<group>"; };
+		9DCE5E501F134C9500D0890C /* XYJodClickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYJodClickCell.h; sourceTree = "<group>"; };
+		9DCE5E511F134C9500D0890C /* XYJodClickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYJodClickCell.m; sourceTree = "<group>"; };
+		9DCE5E521F134C9500D0890C /* XYJodClickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYJodClickCell.xib; sourceTree = "<group>"; };
+		9DCE5E531F134C9500D0890C /* XYJodFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYJodFooterView.h; sourceTree = "<group>"; };
+		9DCE5E541F134C9500D0890C /* XYJodFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYJodFooterView.m; sourceTree = "<group>"; };
+		9DCE5E551F134C9500D0890C /* XYJodFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYJodFooterView.xib; sourceTree = "<group>"; };
+		9DCE5E561F134C9500D0890C /* XYJodHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYJodHeaderView.h; sourceTree = "<group>"; };
+		9DCE5E571F134C9500D0890C /* XYJodHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYJodHeaderView.m; sourceTree = "<group>"; };
+		9DCE5E581F134C9500D0890C /* XYJodHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYJodHeaderView.xib; sourceTree = "<group>"; };
+		9DCE5E591F134C9500D0890C /* XYWelfareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWelfareCell.h; sourceTree = "<group>"; };
+		9DCE5E5A1F134C9500D0890C /* XYWelfareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWelfareCell.m; sourceTree = "<group>"; };
+		9DCE5E5B1F134C9500D0890C /* XYWelfareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYWelfareCell.xib; sourceTree = "<group>"; };
+		9DCE5E5C1F134C9500D0890C /* XYWelfareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYWelfareCollectionViewCell.h; sourceTree = "<group>"; };
+		9DCE5E5D1F134C9500D0890C /* XYWelfareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYWelfareCollectionViewCell.m; sourceTree = "<group>"; };
 		9DD153251EF2826C0075B5ED /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		9DD153261EF2826C0075B5ED /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		9DD153271EF2826C0075B5ED /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
@@ -134,6 +167,7 @@
 		47A3577F1ECCABB60061A379 = {
 			isa = PBXGroup;
 			children = (
+				9DCE5E461F134C9500D0890C /* FindJodOrRecruit */,
 				9DBCEC541F0CE3B900D60FD0 /* image */,
 				47A3578A1ECCABB60061A379 /* BaiduMapTest */,
 				47A357891ECCABB60061A379 /* Products */,
@@ -151,6 +185,7 @@
 		47A3578A1ECCABB60061A379 /* BaiduMapTest */ = {
 			isa = PBXGroup;
 			children = (
+				9DCE151D1F0F1FC300528E4B /* BaiduMapTest.entitlements */,
 				9DBCEC4C1F0C8F7300D60FD0 /* CZRDropDownMenuCell.h */,
 				9DBCEC4D1F0C8F7300D60FD0 /* CZRDropDownMenuCell.m */,
 				9DCD76041EF4D0EA00422E8D /* XYShopActivityHeaderView.h */,
@@ -231,6 +266,58 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		9DCE5E461F134C9500D0890C /* FindJodOrRecruit */ = {
+			isa = PBXGroup;
+			children = (
+				9DCE5E471F134C9500D0890C /* C */,
+				9DCE5E4A1F134C9500D0890C /* M */,
+				9DCE5E4F1F134C9500D0890C /* V */,
+			);
+			name = FindJodOrRecruit;
+			path = BaiduMapTest/FindJodOrRecruit;
+			sourceTree = "<group>";
+		};
+		9DCE5E471F134C9500D0890C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				9DCE5E481F134C9500D0890C /* XYFindOrReleaseJod.h */,
+				9DCE5E491F134C9500D0890C /* XYFindOrReleaseJod.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		9DCE5E4A1F134C9500D0890C /* M */ = {
+			isa = PBXGroup;
+			children = (
+				9DCE5E4B1F134C9500D0890C /* XYClickCellDataSource.h */,
+				9DCE5E4C1F134C9500D0890C /* XYClickCellDataSource.m */,
+				9DCE5E4D1F134C9500D0890C /* XYClickCellModel.h */,
+				9DCE5E4E1F134C9500D0890C /* XYClickCellModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		9DCE5E4F1F134C9500D0890C /* V */ = {
+			isa = PBXGroup;
+			children = (
+				9DCE5E501F134C9500D0890C /* XYJodClickCell.h */,
+				9DCE5E511F134C9500D0890C /* XYJodClickCell.m */,
+				9DCE5E521F134C9500D0890C /* XYJodClickCell.xib */,
+				9DCE5E531F134C9500D0890C /* XYJodFooterView.h */,
+				9DCE5E541F134C9500D0890C /* XYJodFooterView.m */,
+				9DCE5E551F134C9500D0890C /* XYJodFooterView.xib */,
+				9DCE5E561F134C9500D0890C /* XYJodHeaderView.h */,
+				9DCE5E571F134C9500D0890C /* XYJodHeaderView.m */,
+				9DCE5E581F134C9500D0890C /* XYJodHeaderView.xib */,
+				9DCE5E591F134C9500D0890C /* XYWelfareCell.h */,
+				9DCE5E5A1F134C9500D0890C /* XYWelfareCell.m */,
+				9DCE5E5B1F134C9500D0890C /* XYWelfareCell.xib */,
+				9DCE5E5C1F134C9500D0890C /* XYWelfareCollectionViewCell.h */,
+				9DCE5E5D1F134C9500D0890C /* XYWelfareCollectionViewCell.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,8 +349,13 @@
 				TargetAttributes = {
 					47A357871ECCABB60061A379 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BL94LY7X35;
+						DevelopmentTeam = KM6ZEXC7YV;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -293,6 +385,7 @@
 				9DBCEC791F0CE3B900D60FD0 /* 6.jpg in Resources */,
 				9DBCEC741F0CE3B900D60FD0 /* 2.jpg in Resources */,
 				9DBCEC6B1F0CE3B900D60FD0 /* 11.jpg in Resources */,
+				9DCE5E681F134C9500D0890C /* XYWelfareCell.xib in Resources */,
 				9DBCEC7C1F0CE3B900D60FD0 /* 9.jpg in Resources */,
 				9DBCEC7A1F0CE3B900D60FD0 /* 7.jpg in Resources */,
 				9DBCEC751F0CE3B900D60FD0 /* 20.jpg in Resources */,
@@ -302,17 +395,20 @@
 				47A357981ECCABB60061A379 /* Assets.xcassets in Resources */,
 				9DBCEC781F0CE3B900D60FD0 /* 5.jpg in Resources */,
 				9DBCEC531F0C956E00D60FD0 /* ImageCellCollectionViewCell.xib in Resources */,
+				9DCE5E661F134C9500D0890C /* XYJodHeaderView.xib in Resources */,
 				47A357961ECCABB60061A379 /* Main.storyboard in Resources */,
 				9DBCEC711F0CE3B900D60FD0 /* 17.jpg in Resources */,
 				47A357AE1ECCB1EE0061A379 /* TwoViewController.xib in Resources */,
 				9DB98D661EEAA6E5000E77BA /* TestTableviewVC.xib in Resources */,
 				9DBCEC861F0CE62200D60FD0 /* CollectionViewTestVC.xib in Resources */,
+				9DCE5E641F134C9500D0890C /* XYJodFooterView.xib in Resources */,
 				9DBCEC721F0CE3B900D60FD0 /* 18.jpg in Resources */,
 				9DBCEC771F0CE3B900D60FD0 /* 4.jpg in Resources */,
 				9DBCEC7B1F0CE3B900D60FD0 /* 8.jpg in Resources */,
 				47A357A61ECCAF9D0061A379 /* MemedaVC.xib in Resources */,
 				9DBCEC6E1F0CE3B900D60FD0 /* 14.jpg in Resources */,
 				9DBCEC761F0CE3B900D60FD0 /* 3.jpg in Resources */,
+				9DCE5E621F134C9500D0890C /* XYJodClickCell.xib in Resources */,
 				9DBCEC6F1F0CE3B900D60FD0 /* 15.jpg in Resources */,
 				9DBCEC6D1F0CE3B900D60FD0 /* 13.jpg in Resources */,
 				9DB98D6B1EEAA88B000E77BA /* XYOrderCell.xib in Resources */,
@@ -331,8 +427,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCE5E631F134C9500D0890C /* XYJodFooterView.m in Sources */,
+				9DCE5E5E1F134C9500D0890C /* XYFindOrReleaseJod.m in Sources */,
+				9DCE5E601F134C9500D0890C /* XYClickCellModel.m in Sources */,
+				9DCE5E671F134C9500D0890C /* XYWelfareCell.m in Sources */,
 				47A357931ECCABB60061A379 /* ViewController.m in Sources */,
 				47A357901ECCABB60061A379 /* AppDelegate.m in Sources */,
+				9DCE5E691F134C9500D0890C /* XYWelfareCollectionViewCell.m in Sources */,
 				9DBCEC521F0C956E00D60FD0 /* ImageCellCollectionViewCell.m in Sources */,
 				9DDE891D1F0DC9B60012AA41 /* LineLayout.m in Sources */,
 				47A357A91ECCB0850061A379 /* MyENavigationController.m in Sources */,
@@ -340,11 +441,14 @@
 				47A3578D1ECCABB60061A379 /* main.m in Sources */,
 				9DCD76071EF4D0EA00422E8D /* XYShopActivityHeaderView.m in Sources */,
 				9DB98D6A1EEAA88B000E77BA /* XYOrderCell.m in Sources */,
+				9DCE5E611F134C9500D0890C /* XYJodClickCell.m in Sources */,
 				9DD153281EF2826C0075B5ED /* ThreeViewController.m in Sources */,
+				9DCE5E5F1F134C9500D0890C /* XYClickCellDataSource.m in Sources */,
 				47A357A51ECCAF9D0061A379 /* MemedaVC.m in Sources */,
 				9DBCEC851F0CE62200D60FD0 /* CollectionViewTestVC.m in Sources */,
 				9DBCEC891F0CEE5100D60FD0 /* CollectionCell.m in Sources */,
 				9DBCEC4E1F0C8F7300D60FD0 /* CZRDropDownMenuCell.m in Sources */,
+				9DCE5E651F134C9500D0890C /* XYJodHeaderView.m in Sources */,
 				9DB98D651EEAA6E5000E77BA /* TestTableviewVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BL94LY7X35;
+				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = BaiduMapTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.BaiduMapTest;
@@ -475,7 +579,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BL94LY7X35;
+				DEVELOPMENT_TEAM = KM6ZEXC7YV;
 				INFOPLIST_FILE = BaiduMapTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoyangyang.BaiduMapTest;

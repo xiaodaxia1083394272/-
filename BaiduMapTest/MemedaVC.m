@@ -10,6 +10,7 @@
 #import "TwoViewController.h"
 #import "TestTableviewVC.h"
 #import "CollectionViewTestVC.h"
+#import "XYFindOrReleaseJod.h"
 
 
 @interface MemedaVC ()
@@ -50,5 +51,9 @@
     
 }
 
+- (IBAction)clickReleaseBtn:(id)sender {
+    
+    [self.navigationController pushViewController:[XYFindOrReleaseJod new] animated:YES];
+}
 
 @end
