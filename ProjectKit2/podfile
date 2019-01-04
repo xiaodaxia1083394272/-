@@ -1,0 +1,9 @@
+target 'ProjectKit2’ do
+
+pod 'AFNetworking', '~> 3.1.0'
+pod 'MJRefresh', '~> 3.1.15.1'
+pod 'MJExtension'
+pod 'SDWebImage', ' ~> 4.4.0'
+pod 'MBProgressHUD', '~> 1.1.0'
+
+end

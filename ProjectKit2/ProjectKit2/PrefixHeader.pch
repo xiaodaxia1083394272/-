@@ -1,0 +1,197 @@
+//
+//  PrefixHeader.pch
+//  ProjectKit2
+//
+//  Created by HMRL on 2019/1/3.
+//  Copyright © 2019 HMRL. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "UIColor+ColorChange.h"
+
+
+
+#define YFScreen [UIScreen mainScreen].bounds.size
+#define YFColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define iOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+
+#import "BaseTableViewController.h"
+
+
+#define  JLRoutesJumpUrl(module,toController,paramaOne,paramaTwo,paramaThree,paramaFour) [NSString stringWithFormat:@"%@://%@/%@/%@/%@/%@",module,toController,paramaOne,paramaTwo,paramaThree,paramaFour];
+
+#define DEMO_CALL 1
+
+#if DEMO_CALL == 1
+//#import <Hyphenate/Hyphenate.h>
+#else
+//#import <HyphenateLite/HyphenateLite.h>
+#endif
+
+
+//大讲堂
+//#import "LQOpenLession.h"
+
+#ifdef DEBUG
+#define SHLog(...) NSLog(__VA_ARGS__)
+#else
+#define SHLog(...)
+#endif
+
+#define SHLogFunc SHLog(@"%s", __func__)
+
+#define  kLog(args)        SHLog(@"responseObject=%@",args)
+//中文字体
+#define CHINESE_FONT_NAME  @"Helvetica"
+#define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
+//色值
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define RGBColor(r, g, b) RGBA(r, g, b, 1.0f)
+
+//快购导航栏颜色
+#define XLNavColor RGBColor(227, 55, 62)
+
+
+#define XLNormalGray XLGrayColor(242.f)
+
+//全局背景颜色
+#define kGlobalBgColor    hexCOLOR(@"#eaeaea")
+
+//下划线颜色_______
+#define COLOR_Under  RGBColor(198,198,198)
+
+//16进制颜色  "#00FF07"
+#define hexCOLOR(hexColor) [UIColor colorWithHexString: hexColor]
+/** RGB颜色 */
+#define kRGBColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
+
+//透明，白，红，绿，蓝，灰，橙色
+#define kClearColor                [UIColor clearColor]
+#define kWhiteColor                [UIColor whiteColor]
+#define kGrayColor                 [UIColor grayColor]
+#define kBlueColor                 [UIColor blueColor]
+#define kRedColor                  [UIColor redColor]
+#define kOrangeColor               [UIColor orangeColor]
+#define kBlackColor                [UIColor blackColor]
+#define kGreenColor                [UIColor greenColor]
+#define kYellowColor               [UIColor yellowColor]
+#define kPurpleColor               [UIColor purpleColor]
+//随机颜色
+#define XLRandomColor RGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define XLGrayColor(A) RGBColor((A), (A), (A))
+
+//屏幕宽、高
+#define kFullScreen  [UIScreen mainScreen].bounds
+#define kScreenH     [[UIScreen mainScreen] bounds].size.height
+#define kScreenW     [[UIScreen mainScreen] bounds].size.width
+
+
+//状态栏高度
+#define kStatusBarH  [UIApplication sharedApplication].statusBarFrame.size.height
+//导航栏高度
+#define kNavBarH  44.0f
+//导航栏+状态栏
+#define kTopH  ((kScreenH==812 ||kScreenW == 812) ? 88.0f : 64.0f)
+
+// Tabbar 安全区域边框.
+#define  kTabBarSafetyArea   ((kScreenH==812 ||kScreenW == 812) ? 34.0f : 0.0f)
+//Tabbar高度
+#define kTabBarH  ((kScreenH==812 ||kScreenW == 812) ? 83.0f : 49.0f)
+//iphone X 状态栏 与 非X 状态栏的 差值
+#define kStatusSpace ((kScreenH==812 ||kScreenW == 812) ? 24.0f : 0.0f)
+
+
+//不同屏幕尺寸字体适配（375，667是因为效果图为IPHONE6 如果不是则根据实际情况修改）//414 736
+#define kScreenWRatio  (kScreenW  / 375.0)
+#define kScreenHRatio   ((kScreenH==812) ? ((kScreenH-58) / 667.0) : (kScreenH / 667.0))
+
+#define kIpadScreenWRatio  (414  / 375.0)
+#define kIpadScreenHRatio (736 / 667.0)
+//自动适配宽度、高度
+#define isIpad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+#define kFitW(x) \
+((isIpad) ? \
+(((x) * kIpadScreenWRatio)):\
+(((x) * kScreenWRatio)))
+
+#define kFitH(x) \
+((isIpad) ? \
+(((x) * kIpadScreenHRatio)):\
+(((x) * kScreenHRatio)))
+
+
+//@2x 屏幕 (UI图pix为单位)
+#define FitPixW(x) kFitW(((x) * 0.5))
+#define FitPixH(x) kFitH(((x) * 0.5))
+
+//字体大小(常规/粗体)
+//粗体
+#define kBoldSysFont(SIZE) [UIFont boldSystemFontOfSize:kFitW(SIZE)]
+//常规字体
+#define kSysFont(SIZE)    [UIFont systemFontOfSize:kFitW(SIZE)]
+#define kFont(SIZE)    [UIFont systemFontOfSize:kFitW(SIZE)]
+
+#define SysFontPix(SIZE) kSysFont(((SIZE) * 0.5))
+
+//弱引用/强引用  可配对引用在外面用kWeakSelf(self)，block用kStrongSelf(self)  也可以单独引用在外面用
+//KWeakSelf(self) block里面用weakself
+#define kWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define kStrongSelf(type)  __strong typeof(type) type = weak##type;
+
+
+
+#define kNoteCenter         [NSNotificationCenter defaultCenter]
+
+#define kApp        [UIApplication sharedApplication]
+#define kKeyWindow     kApp.keyWindow
+
+#define kUserDefault      [NSUserDefaults standardUserDefaults]
+
+#define kRootVC   [UIApplication sharedApplication].keyWindow.rootViewController
+
+#define kLastWindow [UIApplication sharedApplication].windows.lastObject
+
+
+#define kImage(args) [UIImage imageNamed:args]
+
+//Library/Caches 文件路径
+#define kFilePath ([[NSFileManager defaultManager] URLForDirectory:NSCachesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil])
+//获取temp
+#define kPathTemp NSTemporaryDirectory()[
+
+//获取沙盒 Cache
+#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+// 数字转字符串
+#define kIntToStr(args)  [NSString stringWithFormat:@"%ld",args]
+//字符串是否为空
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length]  < 1 ? YES : NO )
+//数组是否为空
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0 ? YES : NO)
+//字典是否为空
+#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0 ? YES : NO)
+//是否是空对象
+#define kObjectIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0) ? YES : NO )
+
+/**  xlHeader part ************/
+
+#define XL_LOGTHREAD  NSLog(@"%@",[NSThread currentThread])
+//占位图
+#define PlaceholderImg [UIImage imageNamed:@"placeImg"]
+//头像默认图
+#define HeaderIcon_defaultavatar [UIImage imageNamed:@"Me_defaultavatar"]
+
+#define XLLoctionEqual(A,B) ((A).lat == (B).lat && (A).lng == (B).lng)
+/** 建议初始化值 */
+#define XLLoctionNull xlLoctionMake(MAXFLOAT, MAXFLOAT)
+/** 不初始化值为zero 这个位置是 非洲几内亚湾*/
+#define XLLoctionZero xlLoctionMake(0.f, 0.f)
+
+#endif /* PrefixHeader_pch */
